@@ -2,10 +2,11 @@
   <div class="header-name">
     <a href="#">Tom</a>
   </div>
-  <div class="create-room">
-    <%= link_to "チャットを作成する", new_room_path %>
+  <div class="header-right">
+    <%= link_to "チャットを作成する", new_room_path: "create-room-button" %>
   </div>
 </div>
+
 
 <div class="rooms">
   <% current_user.rooms.each do |room| %>
